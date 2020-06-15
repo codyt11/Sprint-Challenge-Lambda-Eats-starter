@@ -112,7 +112,7 @@ const Pizza = () => {
                     {toppings.map(topping => {
                         return (
                             <label htmlFor={topping}>{topping}
-                                <input type='checkbox' name={toppings} checked={pizzaState.topping} onChange={handleChange}/>
+                                <input type='checkbox' name={toppings} data-cy="toppings" checked={pizzaState.topping} onChange={handleChange}/>
                             </label>
                         )
                     })}
@@ -122,12 +122,12 @@ const Pizza = () => {
               <textarea
                 id="special_instructions"
                 name="special_instructions"
-                data-cy="name"
+                data-cy = "special_instructions"
                 value={pizzaState.special_instructions}
                 onChange={handleChange}
               />
             </label>
-            <input type='submit' />
+            <input data-cy="submit" type='submit' />
         </form>
         </>
     )

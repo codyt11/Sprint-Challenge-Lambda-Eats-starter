@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Route exact path = "/"> 
-      <Link to ="/pizza"><button>Order Form</button></Link>
+      <Link to ="/pizza"><button data-cy="button">Order Form</button></Link>
       </Route>
         
       <Route exact path = "/pizza">
