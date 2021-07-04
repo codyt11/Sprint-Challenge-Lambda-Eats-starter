@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+p{
+  Color: red;
+  font-size: 3rem;
+}
+Pizza{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
